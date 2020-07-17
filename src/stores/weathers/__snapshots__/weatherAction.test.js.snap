@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ACTION_TYPES.WEATHERS_GET_ALL_REQUEST should handle ACTION_TYPES.WEATHERS_GET_ALL_REQUEST 1`] = `
+Object {
+  "city": "",
+  "cnt": 0,
+  "cod": "",
+  "errors": null,
+  "isLoading": true,
+  "list": "",
+  "message": 0,
+}
+`;
+
+exports[`ACTION_TYPES.WEATHERS_GET_ALL_REQUEST should return the initial state 1`] = `
+Object {
+  "city": "",
+  "cnt": 0,
+  "cod": "",
+  "errors": null,
+  "isLoading": true,
+  "list": "",
+  "message": 0,
+}
+`;

@@ -1,0 +1,115 @@
+{
+  "name": "weather-react",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://ernestoulloa.github.io/react-weather-app",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "clsx": "^1.1.1",
+    "connected-react-router": "^6.8.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "fetch-mock": "^9.10.3",
+    "fontsource-roboto": "^2.1.4",
+    "highcharts": "^8.1.2",
+    "highcharts-react-official": "^3.0.0",
+    "history": "^5.0.0",
+    "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.19",
+    "moment": "^2.27.0",
+    "node-sass": "^4.14.1",
+    "particles-bg": "^2.5.0",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.27.0",
+    "react": "^16.13.1",
+    "react-animated-css": "^1.2.1",
+    "react-dom": "^16.13.1",
+    "react-fade-in": "^1.1.0",
+    "react-icons": "^3.10.0",
+    "react-particles-js": "^3.2.1",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-promise-middleware": "^6.1.2",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "route": "^0.2.5",
+    "styled-components": "^5.1.1",
+    "unmock-jest-runner": "^0.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --coverage",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build && npm run cleanup",
+    "deploy": "gh-pages -d build",
+    "cleanup": "rm -rf node_modules/.cache/gh-pages"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./src/*.{js,jsx,ts,tsx}": [
+      "eslint --fix-dry-run",
+      "git add"
+    ],
+    "*.+(json|css|md)": [
+      "npx prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.2",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@testing-library/dom": "^7.20.1",
+    "babel-loader": "^8.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.7",
+    "gh-pages": "^3.1.0",
+    "husky": "^4.2.5",
+    "jest-fetch-mock": "^3.0.3",
+    "lint-staged": "^10.2.11",
+    "node-fetch": "^2.6.0",
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1",
+    "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.5.4"
+  }
+}

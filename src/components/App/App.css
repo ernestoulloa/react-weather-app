@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.main-body {
+  /*background: linear-gradient(45deg, rgb(45, 54, 76) 0%, rgb(37, 45, 63) 100%);*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.absolute-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+}
+@media all and (min-width: 1024px) {
+  .chart-inner {
+    position: relative !important;
+  }
+}
+.chart-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
